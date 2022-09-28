@@ -1,2 +1,2 @@
 # fighting-game
-JS + PHP + OpenServer
+JS + PHP
