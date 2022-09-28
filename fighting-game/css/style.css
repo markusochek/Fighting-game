@@ -1,0 +1,24 @@
+#shadow_auth, #shadow_reg, #shadow_sessi, #shadow_gameOver, #shadow_backSessi, #shadow_gameOut {
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+.shadow {
+    visibility :collapse; 
+    display: none;
+}
+
+#shadow_reg.open, #shadow_auth.open, #shadow_sessi.open, #shadow_gameOver.open, #shadow_backSessi.open, #shadow_gameOut.open {
+    visibility :visible; 
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

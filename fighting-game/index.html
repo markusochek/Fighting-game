@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol_shock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <button class ="btn btn-success col container mt-4" id = 'button_auth'>Авторизация</button>
+    <div class="col container mt-4 shadow" id ="shadow_auth">
+        <h1>Авторизация</h1>
+            <input class ="form-control" name="authLog" id="authLog" placeholder="введите логин"><br>
+            <input class ="form-control" name="authPass" id="authPass" placeholder="введите пароль"><br>
+            <button id="authBtn" class ="btn btn-success">Авторизоваться</button>   
+    </div>
+
+    <button  class ="btn btn-success col container mt-4" id = 'button_reg'>Регистрация</button>
+    <div class="container mt-4 shadow" id ="shadow_reg">
+    <h1>Регистрация</h1>
+        <input class ="form-control" name="regLog" id="regLog" placeholder="введите логин"><br>
+        <input class ="form-control" name="regName" id="regName" placeholder="введите имя"><br>
+        <input class ="form-control" name="regPass" id="regPass" placeholder="введите пароль"><br>
+       <button id="regBtn" class ="btn btn-success">Зарегистрироваться</button>   
+    </div>
+
+    <div class="container mt-4 shadow" id ="shadow_sessi">
+        <h1>Сессии</h1>
+            <button id="sessiBtn1" class ="btn btn-success">подключиться к Сессии 1</button><br><br> 
+            <button id="sessiBtn2" class ="btn btn-success">подключиться к Сессии 2</button><br><br>
+            <button id="sessiBtn3" class ="btn btn-success">подключиться к Сессии 3</button><br><br>
+    </div>
+
+    <div class="container mt-4 shadow" id ="shadow_gameOver">
+        <h1>вы проиграли, ваш счёт:
+            <span id="scoreGamer"></span>
+        </h1>
+            <button id="gameOverBtn" class ="btn btn-success">выйти в меню</button><br><br> 
+    </div>
+
+    <div class="mt-4" id ="shadow_backSessi">
+            <button id="backSessiBtn" class ="btn btn-success">выйти в меню</button><br><br> 
+    </div>
+
+    <div class="container mt-4 shadow" id ="shadow_gameOut">
+        <h1>вы сдались, ваш счёт:
+            <span id="scoreGamerOut"></span>
+        </h1>
+            <button id="backSessiOutBtn" class ="btn btn-success">выйти в меню</button><br><br> 
+    </div>
+    
+    <canvas height='0' width='0' id='canvas'></canvas>
+    <script defer src="js/script.js"></script>
+    <script defer src="API.js"></script>
+
+</body> 
+</html>
